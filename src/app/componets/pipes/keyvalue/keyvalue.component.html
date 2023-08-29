@@ -1,0 +1,5 @@
+<h3 class="text-center">Pipes de KEY VALUE</h3>
+<hr>
+<ol>
+  <li *ngFor="let p of persona | keyvalue"> {{p.key}}: {{p.value|json| titlecase}}</li>
+</ol>
