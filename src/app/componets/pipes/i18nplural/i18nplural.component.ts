@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class I18npluralComponent implements OnInit {
 
   public contador=0;
-  public pluralContador=0;
   public map={
     '=0': 'no tiene valor',
     '=1': 'el valor es de (#)',
@@ -22,15 +21,11 @@ export class I18npluralComponent implements OnInit {
 
   aumentar(){
     this.contador++;
-    this.uptadatePluralCounter();
+   
   }
-  restar() {
-    if (this.contador > 0) {
+  restar() {{
       this.contador--;
-      this.uptadatePluralCounter();
+
     }
   }
-uptadatePluralCounter(){
-  this.pluralContador = this.contador;
-}
 }

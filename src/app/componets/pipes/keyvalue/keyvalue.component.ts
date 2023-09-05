@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./keyvalue.component.css']
 })
 export class KeyvalueComponent implements OnInit {
+  
   public persona={
     nombre:"manuela",
     apellido:"ocampo santamaria",

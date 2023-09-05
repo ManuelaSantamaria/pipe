@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {CambiarcolorService} from './utility/services/cambiarcolor.service'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pipe';
+
+  constructor(private cambiarcolorService:CambiarcolorService){}
+
+  get color(){
+    return this.cambiarcolorService.colorOscuro;
+  }
+  
 }
